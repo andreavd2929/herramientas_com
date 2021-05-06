@@ -16,7 +16,7 @@ Una vez instalados es necesario importar los siguientes archivos para poder ejec
 ## Aplicaciones
 
 Hay 7 códigos diferentes :
-Explicación de código
+Código - Función del código.
 - filtro1.py: Este filtro abre la cámara y no coloca ningún filtro. 
 - filtro2.py: Este filtro invierte los colores de la imagen.
 - filtro3.py: Este filtro difumina la imagen.
