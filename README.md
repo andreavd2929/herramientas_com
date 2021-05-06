@@ -15,7 +15,7 @@ Una vez instalados es necesario importar los siguentes archivos para poder ejecu
 
 ## Aplicaciones
 
-Hay 5 códigos diferentes :
+Hay 7 códigos diferentes :
 Explicación de código
 - filtro1.py: Este filtro abre la camara y no coloca ningun filtro. 
 - filtro2.py: Este filtro invierte los colores de la imagen.
