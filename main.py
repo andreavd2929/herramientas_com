@@ -8,7 +8,7 @@ if __name__ == '__main__':
     print("2 --> Inversión de colores")
     print("3 --> Difuminado de imagen")
     print("4 --> De cabeza")
-    print("5 --> Resaltado de azul")
+    print("5 --> Resaltado de color piel")
     print("6 --> Escala de grises")
     print("7 --> Efecto acuarela")
     
