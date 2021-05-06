@@ -21,8 +21,8 @@ if __name__ == '__main__':
         # Convert BGR to HSV
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
         # define range of blue color in HSV
-        lower_blue = np.array([245, 222, 179])
-        upper_blue = np.array([250, 214, 165])
+        lower_blue = np.array([0, 133, 77])
+        upper_blue = np.array([255, 173, 127])
         # Threshold the HSV image to get only blue colors
         mask = cv2.inRange(hsv, lower_blue, upper_blue)
         # Bitwise-AND mask and original image
