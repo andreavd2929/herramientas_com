@@ -16,3 +16,5 @@ Explicación de código
 - Filtro 3:
 - Filtro 4:
 - Filtro 5:
+- Filtro 6:
+- Filtro 7:
