@@ -21,12 +21,9 @@ if __name__ == '__main__':
     ### Positional arguments
     parser.add_argument('-i', '--cameraSource', default=0, help="Introduce number or camera path, default is 0 (default cam)")
 
-    
     args = vars(parser.parse_args())
 
-
     cap = cv2.VideoCapture(args["cameraSource"]) #0 local o primary camera
-    
     
     while cap.isOpened():
         
@@ -65,15 +62,11 @@ if __name__ == '__main__':
             
         elif filtro == 5:
             a = "resaltar color"
-            _, frame = cap.read()
-            # Convert BGR to HSV
+            success, img = cap.read()
             hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-            # define range of blue color in HSV
             lower_blue = np.array([245, 222, 179])
             upper_blue = np.array([250, 214, 165])
-            # Threshold the HSV image to get only blue colors
             mask = cv2.inRange(hsv, lower_blue, upper_blue)
-            # Bitwise-AND mask and original image
             img = cv2.bitwise_and(frame, frame, mask=mask)
             
         elif filtro ==6:
@@ -105,7 +98,6 @@ if __name__ == '__main__':
 
     cap.release()
     cv2.destroyAllWindows()
-
 
     print('Script took %f seconds.' % (time.time() - script_start_time))
     
