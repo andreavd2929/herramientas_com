@@ -7,7 +7,7 @@ Despues de clonar este repositorio, es necesario instalar:
 - Python3
 - OpenCV
 
-Una vez instalados en necesario importar los siguentes archivos para poder ejecutar el programa:
+Una vez instalados es necesario importar los siguentes archivos para poder ejecutar el programa:
 - import cv2
 - import time
 - import argparse
