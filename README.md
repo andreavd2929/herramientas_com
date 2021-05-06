@@ -18,7 +18,7 @@ Código - Función del código.
 - filtro5.py: Este filtro hace que solo se vea en la imagen cualquier objeto azul y el fondo negro.
 - filtro6.py: Este filtro convierte la imagen a escala de grises.
 - filtro7.py: Este filtro hace un efecto de acuarela a la imagen.
-- filtro8.py: Este filtro nos da una imagen como vision termica
+- filtro8.py: Este filtro nos da una imagen como visión térmica
 
 ## Usage
 
