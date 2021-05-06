@@ -17,8 +17,8 @@ Una vez instalados en necesario importar los siguentes archivos para poder ejecu
 
 Hay 5 códigos diferentes :
 Explicación de código
-- Filtro 1: Este filtro abre la camara y no coloca ningun filtro
-- Filtro 2: Este filtro invierte los colores de la imagen
+- Filtro 1: Este filtro abre la camara y no coloca ningun filtro. (---------)
+- Filtro 2: Este filtro invierte los colores de la imagen. (--------)
 - Filtro 3:
 - Filtro 4:
 - Filtro 5:
