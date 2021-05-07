@@ -86,6 +86,12 @@ if __name__ == '__main__':
                 break
             if img is None:
                 break
+        elif filtro ==8:
+            a = "filtro de calor"
+            success, img = cap.read()
+            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            blur = cv2.GaussianBlur(gray,(15,15),0)
+            colors = scalarMap.to_rgba(blur, bytes=False)
         
         else:
             print("Error en la selección")
