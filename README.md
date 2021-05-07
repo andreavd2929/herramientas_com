@@ -27,3 +27,6 @@ Para poder ejectutar los codigos se deben imoprtar los siguentes archivos
 - import time
 - import argparse
 - import numpy as np
+- import matplotlib as mpl
+- import matplotlib.cm as mtpltcm
+
