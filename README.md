@@ -14,6 +14,7 @@ Después de clonar este repositorio, es necesario instalar:
 - Python3
 - OpenCV
 - Numpy
+- Matplotlib
 
 ## Aplicaciones
 
