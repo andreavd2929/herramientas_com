@@ -2,11 +2,11 @@
 # Semana Tec Herramientas Computacionales
 
 ## Integrantes del equipo
-Andrea Velázquez de Dios
-Rodrigo López Valencia
-Javier Campos Figueroa
-Gabriel Granda Hervas
-Lucas Wong Mang
+Andrea Velázquez de Dios <br/>
+Rodrigo López Valencia <br/>
+Javier Campos Figueroa <br/>
+Gabriel Granda Hervas <br/>
+Lucas Wong Mang <br/>
 
 ## Instalar dependencias necesarias
 
