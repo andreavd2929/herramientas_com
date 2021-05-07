@@ -86,6 +86,7 @@ if __name__ == '__main__':
                 break
             if img is None:
                 break
+                
         elif filtro ==8:
             a = "filtro de calor"
             success, img = cap.read()
