@@ -2,6 +2,8 @@ import cv2
 import time
 import argparse
 import numpy as np
+import matplotlib as mpl
+import matplotlib.cm as mtpltcm
 
 if __name__ == '__main__':
     print("1 --> Sin filtro")
@@ -11,6 +13,7 @@ if __name__ == '__main__':
     print("5 --> Resaltado de color piel")
     print("6 --> Escala de grises")
     print("7 --> Efecto acuarela")
+    print("8 --> Filtro de calor")
     
     filtro = int(input("Elija el filtro de su preferencia: ", ))
 
@@ -63,11 +66,11 @@ if __name__ == '__main__':
         elif filtro == 5:
             a = "resaltar color"
             success, img = cap.read()
-            hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-            lower_blue = np.array([245, 222, 179])
-            upper_blue = np.array([250, 214, 165])
-            mask = cv2.inRange(hsv, lower_blue, upper_blue)
-            img = cv2.bitwise_and(frame, frame, mask=mask)
+            hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+            lower = np.array([0, 133, 77])
+            upper = np.array([255, 173, 127])
+            mask = cv2.inRange(hsv, lower, upper)
+            img = cv2.bitwise_and(img, img, mask=mask)
             
         elif filtro ==6:
             a = "escala de grises"
@@ -88,6 +91,10 @@ if __name__ == '__main__':
                 break
                 
         elif filtro ==8:
+            cap = cv2.VideoCapture(0)
+            colormap = mpl.cm.jet
+            cNorm = mpl.colors.Normalize(vmin=0, vmax=255)
+            scalarMap = mtpltcm.ScalarMappable(norm=cNorm, cmap=colormap)
             a = "filtro de calor"
             success, img = cap.read()
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -96,6 +103,7 @@ if __name__ == '__main__':
         
         else:
             print("Error en la selección")
+            break
         
         flip = cv2.flip(img,1)
         cv2.imshow(a,flip)
@@ -107,6 +115,3 @@ if __name__ == '__main__':
     cv2.destroyAllWindows()
 
     print('Script took %f seconds.' % (time.time() - script_start_time))
-    
-    
-    
