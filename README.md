@@ -6,11 +6,12 @@ Después de clonar este repositorio, es necesario instalar:
 
 - Python3
 - OpenCV
+- Numpy
 
 ## Aplicaciones
 
-Hay 8 códigos diferentes :
-Código - Función del código.
+El archivo main está compuesto por un condicional que, dependiendo de la entrada del usuario, correrá el filtro indicado, dichos filtros se pueden correr por separado en los siguientes archivos y se explican brevemente:
+
 - filtro1.py: Este filtro abre la cámara y no coloca ningún filtro. 
 - Filtro2.py: Este filtro invierte los colores de la imagen.
 - filtro3.py: Este filtro difumina la imagen.
@@ -22,8 +23,9 @@ Código - Función del código.
 
 ## Usage
 
-Para poder ejectutar los codigos se deben imoprtar los siguentes archivos
-- import cv2
-- import time
-- import argparse
-- import numpy as np
+Para poder ejectutar los codigos se deben imoprtar las siguientes librerías.
+- cv2: esta librería es clave ya que fue diseñada para "computer vision".
+- time: utilizada para mostrar al usuario por cuánto tiempo fue corrido el código.
+- argparse: que facilita la escritura de interfaces de línea de comandos, en este código nos ayuda a abrir la cámara.
+- numpy: en ciertos filtros se utilizan arreglos de numpy para facilitar el manejo de los pixeles.
+- matplotlib: utilizada en el filtro 8 por su paleta de colores cálidos.
